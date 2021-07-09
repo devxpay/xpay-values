@@ -1,0 +1,24 @@
+cilium:
+  enabled: false
+elk:
+  enabled: false
+prometheus:
+  enabled: false
+
+services:
+  global:
+    ipv6only: false
+  
+  vault:
+    dev: true
+
+  ingress:
+    class: "nginx"
+    rootDomain: some-site.ru
+    tls:
+      enabled: true
+      letsEncrypt:
+        enabled: false
+        issuer: ""
+      secretName: someTlsSecret
+

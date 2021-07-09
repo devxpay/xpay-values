@@ -1,0 +1,11 @@
+helmDefaults:
+  createNamespace: false
+environments:
+  default:
+    values:
+      - default.values.yaml
+  devstand:
+  production:
+  dodo:
+    values:
+      - dodo.values.yaml
